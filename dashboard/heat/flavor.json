@@ -1,0 +1,10 @@
+{
+    "flavor1": {
+        "type": "OS::Nova::Flavor",
+        "properties": {
+            "ram": 0,
+            "vcpus": 0,
+            "disk": 0
+        }
+    }
+}

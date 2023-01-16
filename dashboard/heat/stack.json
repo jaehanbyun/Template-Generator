@@ -1,0 +1,8 @@
+{
+    "stack_name": "virtual_machine_test",
+    "template": {
+      "heat_template_version": "2021-04-16",
+      "description": "test cloud-init",
+      "resources": {}
+    }
+}

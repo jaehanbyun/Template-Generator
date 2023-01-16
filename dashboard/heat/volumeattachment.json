@@ -1,0 +1,11 @@
+{
+  "type": "OS::Cinder::VolumeAttachment",
+  "properties": {
+    "instance_uuid": {
+      "get_resource": "instance"
+    },
+    "volume_id": " ",
+    "mountpoint": " "
+  }
+}
+

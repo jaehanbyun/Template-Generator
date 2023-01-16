@@ -1,0 +1,7 @@
+{
+  "runcmd" : [
+    "cd ./storage1",
+    "export PATH=$(pwd)/anaconda3/bin:$PATH",
+    "conda init"
+  ]
+}

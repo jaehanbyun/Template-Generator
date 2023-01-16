@@ -1,0 +1,9 @@
+{
+	"Nova_instance": {
+        "type": "OS::Nova::Server",
+        "properties": {
+            "flavor": String,
+            "image": String,
+            "networks": [network]
+      }
+}

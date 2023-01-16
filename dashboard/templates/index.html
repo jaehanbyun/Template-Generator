@@ -1,0 +1,51 @@
+{% extends "base.html"%}
+{% block content %}
+
+<script>
+
+</script>
+
+<div class="jumbotron">
+    <h2>Openstack Template Generator!!</h2>
+    <p>가상환경을 생성하기 위해 필요한 정보를 입력하는 페이지입니다.</p>
+    <ul>
+        <li>각 항목에 입력된 정보는 Openstak Heat Template 작성에 이용됩니다.</li>
+    </ul>
+
+    <form action="{{url_for('report')}}">
+        <label for="envname">가상환경 name : </label>
+        <input type="text" name="envname" id="envname"><br>
+        <label for="net">Network 선택 : </label>
+        <select name="net" id="net">
+            <option value="">==Please choose an option==</option>
+            <option value="public">Public</option>
+            <option value="shared">Shared</option>
+        </select><br>
+        <label for="os">OS : </label>
+        <select name="os" id="os">
+            <option value="">===please choose an option===</option>
+            <option value="Ubuntu 20.04">Ubuntu 20.04</option>
+            <option value="Fedora-Cloud-Base-36-1.5.X86_64">Fedora-Cloud-Base-36-1.5.X86_64</option>
+            <option value="cirros-0.5.2-x86_64-disk">cirros-0.5.2-x86_64-disk</option>
+        </select><br>
+        <label>Flavor</label><br>
+        <label for="flavor_vcpu">Flavor Vcpu : </label>
+        <input type="text" name="flavor_vcpu" id="flavor_vcpu"><br>
+        <label for="flavor_ram">Flavor Ram : </label>
+        <input type="text" name="flavor_ram" id="flavor_ram"><br>
+        <label for="flavor_disk">Flavor Disk Storage : </label>
+        <input type="text" name="flavor_disk" id="flavor_disk"><br>
+        <label for="user_name">생성할 User Name : </label>
+        <input type="text" name="user_name" id="user_name"><br>
+
+        <label>구성하고 싶은 SW, Data</label><br>
+        <input type="checkbox" id="ML" name="env_volume" value="1">
+        <label for="ML"> ML_Environment</label>
+        <input type="checkbox" id="ML_data" name="data_volume" value="2">
+        <label for="ML_data"> ML_Data</label><br>
+
+        <input class="btn btn-primary" type="submit" value="Submit Form">
+    </form>
+</div>
+
+{% endblock %}

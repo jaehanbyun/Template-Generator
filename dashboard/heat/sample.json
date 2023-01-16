@@ -1,0 +1,11 @@
+{
+  "EC2Instance": {
+    "Type": "AWS::EC2::Instance",
+    "Properties": {
+      "Tags": String,
+      "InstanceType": String,
+      "ImageId": String,
+      "NetworkInterfaces": [ NetworkInterfaces, .. ]
+    }
+  }
+}

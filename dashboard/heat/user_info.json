@@ -1,0 +1,5 @@
+{
+    "name": " ",
+    "shell": "/bin/bash",
+    "sudo": "ALL=(ALL) NOPASSWD:ALL"
+}

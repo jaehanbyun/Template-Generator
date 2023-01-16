@@ -1,0 +1,6 @@
+{
+  "runcmd": [
+    "mkdir $(pwd)/storage1",
+    "mount /dev/vdb $(pwd)/storage1"
+  ]
+}

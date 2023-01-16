@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+{% block content %}
+<div class="jumbotron">
+  <h1>Thank you for signing up {{envname}}!</h1><br>
+
+    {% if status == 201  %}
+        <h2>정상적으로 가상환경{{envname}}이 생성되었습니다! </h2>
+    {% else %}
+        <h2>가상환경{{envname}} 생성 중 문제가 발생하였습니다.</h2>
+    {% endif %}
+
+</div>
+
+{% endblock %}

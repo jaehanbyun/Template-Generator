@@ -1,0 +1,20 @@
+{
+    "instance": {
+        "type": "OS::Nova::Server",
+        "properties": {
+            "name": "",
+            "flavor": {
+                "get_resource" : " "
+            },
+            "image": "",
+            "key_name": "mykey",
+            "networks": [{
+                "network" : ""
+            }],
+            "user_data": {
+                "get_resource": ""
+            },
+            "user_data_format": "RAW"
+        }
+    }
+}
